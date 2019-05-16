@@ -27,6 +27,7 @@
 }
 
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
+    NSLog(@"Leaf封装的图片选择插件");
     if (!flutterResult) {
         flutterResult([FlutterError errorWithCode:@"pick_request" message:@"Canceled" details:nil]);
         flutterResult = nil;
